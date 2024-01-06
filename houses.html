@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    body { font-family: Arial, sans-serif; }
+     .property-card { width: 100%; margin: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center;display: flex; }
+      .property-card img { width: 500px; height: auto; display:flex ;}
+       .property-card a { display: block; text-decoration: none; color: #000; }
+        .property-card a:hover { color: #f00; }
+        .conatiner{width:100%;border:1px solid black}
+        .col{height: 45px;}
+
+         </style>
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!---NAV-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.PNG" alt="LOGO" style="height: 80px;width: 100px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About Us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact Us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="houses.html">Homes</a></li>
+                            <li><a class="dropdown-item" href="plots.html">Plots</a></li>
+                            <li><a class="dropdown-item" href="flats.html">Apartments</a></li>
+                            <li><a class="dropdown-item" href="commercial.html">Commercial</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Extra
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="upcoming.html">Upcoming Projects</a></li>
+                            <li><a class="dropdown-item" href="trends.html">Trends</a></li>
+                            <li><a class="dropdown-item" href="power.html">Buying Power Calculator</a></li>
+                            <li><a class="dropdown-item" href="cost.html">Buy/Sale Calculator</a></li>
+                            <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+                            <li><a class="dropdown-item" href="security.html">Security</a></li>
+                            <li><a class="dropdown-item" href="facility.html">Extra Facilities</a></li>
+                            <li><a class="dropdown-item" href="ct.html">Clients Portal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dashbord.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Where Aspirations Meet Foundation.</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+     <form action="search.php" method="post"> 
+        <label for="property-type">Property Type:</label> 
+        <select name="property-type" id="property-type">
+             <option value="houses">Houses</option>
+              <option value="apartments">Apartments</option>
+               <option value="townhouses">Townhouses</option>
+                <option value="land">Land</option> 
+                <option value="Refugee apartments">Refugee Apartments</option></select>
+                <label for="location">Location:</label>
+                <input type="text" name="location" id="location" placeholder="Enter Location">
+                
+                <label for="price">Max Price:</label>
+                <input type="number" name="price" id="price" placeholder="Enter Max Price">
+                
+                <input type="submit" value="Search">
+            </form>
+             <h3>Top Rated Properties</h3>
+             <h6>Showing results 1 of 4</h6> 
+             <div class="conatiner-fluid">
+             <div class="property-card"> 
+                <img src="images/image1.jpg" alt="Property 1">
+                <div class="conatiner">
+                    <div class="row">
+                        <div class="col"><h4 style="float: left;padding-left: 5px;"  ;>Property 1</h4></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    
+
+                    </div>
+                    <div class="row">
+                        <div class="col"><h2>PKR 1.2 Crore</h2></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    
+
+                    </div>
+                    <div class="row">
+                        <div class="col"><p>Bahria Town , Overseas Block A</p></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    
+
+                    </div>
+                    <div class="row">
+                        <div class="col"><i class="fas fa-bed">    3</i>         <i class="fas fa-bath">   2</i>  <i class="fas fa-ruler"> 5 Marla</i></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    
+
+                    </div>
+                    <div class="row">
+                        <div class="col"><b>French Structured house in Bahria Town, Available for sale.</b></div>
+                        <div class="col"></div>
+                       
+                    
+
+                    </div>
+                    <div class="row">
+                        <div class="col"><i class="fas fa-envelope"></i>  <i class="fab fa-whatsapp"></i>  <i class="fas fa-phone">Call</i></div>
+                        <div class="col"> <a href="images/image1.jpg">View Details</a></div>
+                        <div class="col"></div>
+                    
+
+                    </div>
+                    
+                
+        
+                 
+                </div>
+                 </div> 
+                 <div class="property-card"> 
+                    <img src="images/image2.jpg" alt="Property 2"> 
+                    <div class="conatiner">
+                        <div class="row">
+                            <div class="col"><h4 style="float: left;padding-left: 5px;"  ;>Property 2</h4></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        
+    
+                        </div>
+                        <div class="row">
+                            <div class="col"><h2>PKR 2.5 Crore</h2></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        
+    
+                        </div>
+                        <div class="row">
+                            <div class="col"><p>Lake City, Elites Block A</p></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        
+    
+                        </div>
+                        <div class="row">
+                            <div class="col"><i class="fas fa-bed">    5</i>         <i class="fas fa-bath">   3</i>  <i class="fas fa-ruler"> 15 Marla</i></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        
+    
+                        </div>
+                        <div class="row">
+                            <div class="col"><b>American Structured house in Lake City, Available for sale.</b></div>
+                            <div class="col"></div>
+                           
+                        
+    
+                        </div>
+                        <div class="row">
+                            <div class="col"><i class="fas fa-envelope"></i>  <i class="fab fa-whatsapp"></i>  <i class="fas fa-phone">Call</i></div>
+                            <div class="col"> <a href="images/image2.jpg">View Details</a></div>
+                            <div class="col"></div>
+                        
+    
+                        </div>
+                        
+                    
+            
+                     
+                    </div>
+                     </div> 
+                
+                      <div class="property-card">
+                         <img src="images/image3.jpg" alt="Property 3">
+                         <div class="conatiner">
+                            <div class="row">
+                                <div class="col"><h4 style="float: left;padding-left: 5px;"  ;>Property 3</h4></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                            
+        
+                            </div>
+                            <div class="row">
+                                <div class="col"><h2>PKR 3.5 Crore</h2></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                            
+        
+                            </div>
+                            <div class="row">
+                                <div class="col"><p>Bahria Orchard , Spring Block F</p></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                            
+        
+                            </div>
+                            <div class="row">
+                                <div class="col"><i class="fas fa-bed">    6</i>         <i class="fas fa-bath">   5</i>  <i class="fas fa-ruler"> 1 Kanal</i></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                            
+        
+                            </div>
+                            <div class="row">
+                                <div class="col"><b>Japanese Structured house in Bahria Orchard, Available for sale.</b></div>
+                                <div class="col"></div>
+                               
+                            
+        
+                            </div>
+                            <div class="row">
+                                <div class="col"><i class="fas fa-envelope"></i>  <i class="fab fa-whatsapp"></i>  <i class="fas fa-phone">Call</i></div>
+                                <div class="col"> <a href="images/image3.jpg">View Details</a></div>
+                                <div class="col"></div>
+                            
+        
+                            </div>
+                            
+                        
+                
+                         
+                        </div>
+                         </div> 
+                       
+                        <div class="property-card">
+                             <img src="images/image4.jpg" alt="Property 4">
+                             <div class="conatiner">
+                                <div class="row">
+                                    <div class="col"><h4 style="float: left;padding-left: 5px;"  ;>Property 4</h4></div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                
+            
+                                </div>
+                                <div class="row">
+                                    <div class="col"><h2>PKR 6 Crore</h2></div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                
+            
+                                </div>
+                                <div class="row">
+                                    <div class="col"><p>Askari X ,Overseas Block C</p></div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                
+            
+                                </div>
+                                <div class="row">
+                                    <div class="col"><i class="fas fa-bed">    3</i>         <i class="fas fa-bath">   2</i>  <i class="fas fa-ruler"> 10 Marla</i></div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                
+            
+                                </div>
+                                <div class="row">
+                                    <div class="col"><b>Italian Structured house in Askari X , Available for sale.</b></div>
+                                    <div class="col"></div>
+                                   
+                                
+            
+                                </div>
+                                <div class="row">
+                                    <div class="col"><i class="fas fa-envelope"></i>  <i class="fab fa-whatsapp"></i>  <i class="fas fa-phone">Call</i></div>
+                                    <div class="col"> <a href="images/image4.jpg">View Details</a></div>
+                                    <div class="col"></div>
+                                
+            
+                                </div>
+                                
+                            
+                    
+                             
+                            </div>
+                             </div> 
+                             </div> </div>
+                             <!---FOOTER-->
+    <div class="container-fluid" style="color: aliceblue;background-color: gray;">
+
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h3>Company</h3>
+                    <ul class="nav flex-column" style="color: aliceblue;">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="About Us.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="Contact Us.html" class="nav-link p-0 text-body-secondary">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="FAQs.html" class="nav-link p-0 text-body-secondary">FAQs</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="EnquiryForm.html" class="nav-link p-0 text-body-secondary">Help and
+                                Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h3>Connect</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2" style="color: aliceblue;"><a href="Blogs.html"
+                                class="nav-link p-0 text-body-secondary" style="color: aliceblue;">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="Blogs.html" class="nav-link p-0 text-body-secondary">News</a></li>
+                        <li class="nav-item mb-2"><a href="trends.html" class="nav-link p-0 text-body-secondary">Forum</a></li>
+                        <li class="nav-item mb-2"><a href="agents.html" class="nav-link p-0 text-body-secondary">Real Estate
+                                Agents</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Add Property</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h3>Head Office</h3>
+                    <ul class="nav flex-column" style="color: aliceblue;">
+                        <li class="nav-item mb-2" style="color: aliceblue;"><a href="#"
+                                class="nav-link p-0 text-body-secondary">Houston, Texas.</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Zakriya Ahmed</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">03121259123</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Office Number</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">042-12312369</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h3>Subscribe to our newsletter</h3>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer class=" text-center text-white" style="background-color: gray;">
+                <div class="container p-4 pb-0" style="background-color: gray;">
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-twitter"></i></a>
+
+                        <!-- Google -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-google"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-linkedin-in"></i></a>
+
+                        <!-- Github -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-github"></i></a>
+                    </section>
+
+                    
+                    <div class="text-center p-3" style="background-color: gray;">
+                        © 2024 Copyright:
+                        <a class="text-white" href="index.html">dreamhomes.com</a>
+                    </div>
+                    
+                </div>
+            </footer>
+
+    </div>
+
+                             
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

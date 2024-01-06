@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container {width: 100%;border: 1px solid black;}
+    .bg-column{background-image:url('trend/bg2.jpg') ;background-size:cover ;background-position:center ;}
+.col{height: 100px;border: 1px solid black ;margin-left: 10px;margin-right: 10px;border-radius: 50px;}
+.hh{width:100%;border:none;margin-left: 20px;margin-right: 20px;}
+.kk{height: 35px;border: none;border-radius: 0;margin: 0 0 0 0;color:rgb(91, 79, 79);}
+.jj{height: 60px;border: none;border-radius: 0;margin: 0 0 0 0;}
+.progress {
+  height: 20px; width: 250px;background-color: #f5f5f5;border-radius: 4px;
+}
+
+.progress-bar {height: 100%;width: 0;background-color: #007bff;border-radius: 4px;transition: width 0.5s ease-in-out;
+}
+
+
+
+</style>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!---NAV-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.PNG" alt="LOGO" style="height: 80px;width: 100px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About Us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact Us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="houses.html">Homes</a></li>
+                            <li><a class="dropdown-item" href="plots.html">Plots</a></li>
+                            <li><a class="dropdown-item" href="flats.html">Apartments</a></li>
+                            <li><a class="dropdown-item" href="commercial.html">Commercial</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Extra
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="upcoming.html">Upcoming Projects</a></li>
+                            <li><a class="dropdown-item" href="trends.html">Trends</a></li>
+                            <li><a class="dropdown-item" href="power.html">Buying Power Calculator</a></li>
+                            <li><a class="dropdown-item" href="cost.html">Buy/Sale Calculator</a></li>
+                            <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+                            <li><a class="dropdown-item" href="security.html">Security</a></li>
+                            <li><a class="dropdown-item" href="facility.html">Extra Facilities</a></li>
+                            <li><a class="dropdown-item" href="ct.html">Clients Portal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dashbord.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Where Aspirations Meet Foundation.</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="conatiner">
+        <div class="row">
+            <div class="col bg-column" style="margin-left:20px ;"><h4 style="color: red;margin-left: 38%;">Lahore</h4><h8 style="margin-left: 35%;">2.6M Searches</h8><br> <a href="trend/bg1.jpg" style="margin-left: 38%;">View Trend</a></div>
+            <div class="col bg-column" style="margin-left:20px ;"><h4 style="color: red;margin-left: 38%;">Karachi</h4><h8 style="margin-left: 35%;">3.1M Searches</h8><br> <a href="trend/bg1.jpg" style="margin-left: 38%;">View Trend</a></div>
+            <div class="col bg-column" style="margin-left:20px ;"><h4 style="color: red;margin-left: 38%;">Peshawar</h4><h8 style="margin-left: 35%;">1.5M Searches</h8><br> <a href="trend/bg1.jpg" style="margin-left: 38%;">View Trend</a></div>
+            <div class="col bg-column" style="margin-left:20px ;"><h4 style="color: red;margin-left: 38%;">Islamabad</h4><h8 style="margin-left: 35%;">2.4M Searches</h8><br> <a href="trend/bg1.jpg" style="margin-left: 38%;">View Trend</a></div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+<h4 style="margin-left: 30px;">Most Searched Locations for Houses</h4>
+<div class="conatiner hh">
+    <div class="row">
+        <div class="col kk bg-column">Rank</div>
+        <div class="col kk bg-column">Location</div>
+        <div class="col kk bg-column">Trend</div>
+        <div class="col kk bg-column">Search Percentage %</div>
+        <div class="col kk bg-column"></div>
+
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>1</h4></div>
+        <div class="col jj bg-column"><h4>Bahria Town</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">75.5%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>2</h4></div>
+        <div class="col jj bg-column"><h4>DHA Defence</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">69.5%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 69%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>3</h4></div>
+        <div class="col jj bg-column"><h4>Lake City</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">64.5%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 64%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>4</h4></div>
+        <div class="col jj bg-column"><h4>Butt Fairways</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">60.5%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>5</h4></div>
+        <div class="col jj bg-column"><h4>Kuwait Towers</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">59.5%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>6</h4></div>
+        <div class="col jj bg-column"><h4>Vice City</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">58.5%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<h4 style="margin-left: 30px;">Most Searched Locations for Flats</h4>
+<div class="conatiner hh">
+    <div class="row">
+        <div class="col kk bg-column">Rank</div>
+        <div class="col kk bg-column">Location</div>
+        <div class="col kk bg-column">Trend</div>
+        <div class="col kk bg-column">Search Percentage %</div>
+        <div class="col kk bg-column"></div>
+
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>1</h4></div>
+        <div class="col jj bg-column"><h4>Askari X</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">90%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>2</h4></div>
+        <div class="col jj bg-column"><h4>DHA Rahbar</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">80%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>3</h4></div>
+        <div class="col jj bg-column"><h4>Gulistan-e-Johar</h4>Karachi</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">75%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>4</h4></div>
+        <div class="col jj bg-column"><h4>Clifton</h4>Karachi</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">70%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>5</h4></div>
+        <div class="col jj bg-column"><h4>Jaleel Garden</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">65%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>6</h4></div>
+        <div class="col jj bg-column"><h4>Nathia Gali</h4>Islamabad</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">60%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div></div>
+
+
+
+
+    <h4 style="margin-left: 30px;">Most Searched Locations for Plots</h4>
+<div class="conatiner hh">
+    <div class="row">
+        <div class="col kk bg-column">Rank</div>
+        <div class="col kk bg-column">Location</div>
+        <div class="col kk bg-column">Trend</div>
+        <div class="col kk bg-column">Search Percentage %</div>
+        <div class="col kk bg-column"></div>
+
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>1</h4></div>
+        <div class="col jj bg-column"><h4>Bahria Orchard</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">100%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>2</h4></div>
+        <div class="col jj bg-column"><h4>DHA EME</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">90.5%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>3</h4></div>
+        <div class="col jj bg-column"><h4>Wapda Town III</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">85.5%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>4</h4></div>
+        <div class="col jj bg-column"><h4>Fazai Society</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">80.5</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>5</h4></div>
+        <div class="col jj bg-column"><h4>Valencia Town</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">75.5%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col jj bg-column"><h4>6</h4></div>
+        <div class="col jj bg-column"><h4>Kabeer Town</h4>Lahore</div>
+        <div class="col jj bg-column"><i class="fas fa-arrow-alt-circle-up">Trend Increased</i>
+        </div>
+        <div class="col jj bg-column"><h6 style="margin-left: 10px;">70.5%</h6><div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          </div>
+        <div class="col jj bg-column"><a href="trend/bg1.jpg" style="margin-left: 100px;">View Trend</a></div>
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+<br><br>
+<!---FOOTER-->
+<div class="container-fluid" style="color: aliceblue;background-color: gray;">
+
+    <footer class="py-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h3>Company</h3>
+                <ul class="nav flex-column" style="color: aliceblue;">
+                    <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="About Us.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                    <li class="nav-item mb-2"><a href="Contact Us.html" class="nav-link p-0 text-body-secondary">Contact Us</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="FAQs.html" class="nav-link p-0 text-body-secondary">FAQs</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="EnquiryForm.html" class="nav-link p-0 text-body-secondary">Help and
+                            Support</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h3>Connect</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2" style="color: aliceblue;"><a href="Blogs.html"
+                            class="nav-link p-0 text-body-secondary" style="color: aliceblue;">Blog</a></li>
+                    <li class="nav-item mb-2"><a href="Blogs.html" class="nav-link p-0 text-body-secondary">News</a></li>
+                    <li class="nav-item mb-2"><a href="trends.html" class="nav-link p-0 text-body-secondary">Forum</a></li>
+                    <li class="nav-item mb-2"><a href="agents.html" class="nav-link p-0 text-body-secondary">Real Estate
+                            Agents</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Add Property</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h3>Head Office</h3>
+                <ul class="nav flex-column" style="color: aliceblue;">
+                    <li class="nav-item mb-2" style="color: aliceblue;"><a href="#"
+                            class="nav-link p-0 text-body-secondary">Houston, Texas.</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Zakriya Ahmed</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">03121259123</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Office Number</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">042-12312369</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h3>Subscribe to our newsletter</h3>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class=" text-center text-white" style="background-color: gray;">
+            <div class="container p-4 pb-0" style="background-color: gray;">
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-linkedin-in"></i></a>
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-github"></i></a>
+                </section>
+
+                
+                <div class="text-center p-3" style="background-color: gray;">
+                    © 2024 Copyright:
+                    <a class="text-white" href="index.html">dreamhomes.com</a>
+                </div>
+                
+            </div>
+        </footer>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

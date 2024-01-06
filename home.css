@@ -1,0 +1,37 @@
+
+body {
+  font-family: "Copperplate";
+ 
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  font-family: "Copperplate";
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+.container{height: 300px;
+ 
+}
+
+
+.row{
+height: 300px;
+}
+
+.info{height: 60px;
+border: none;
+}
+
+.icons{
+  gap: 200px;
+  height: 60px;
+  border: none;
+}
+
+
+img{height: 300px;
+  width:500px ;
+}

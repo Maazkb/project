@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t{width: 80%;height: auto;border: 1px solid black;margin-left: 150px;}
+        body { font-family: Arial, sans-serif; }
+        h1, h2 { color: #4A4A4A; } 
+         p { color: #7A7A7A; } 
+         form { max-width: auto; margin: 0 auto;padding-left: 10px;padding-right: 10px;padding-bottom: 10px;} 
+         label { display: block; margin-top: 10px; } 
+         input[type="text"], input[type="number"] { width: 100%; padding: 6px 10px; margin-top: 5px; border: 1px solid #ccc; box-sizing: border-box; } 
+         select { width: 100%; padding: 6px 10px; margin-top: 5px; border: 1px solid #ccc; box-sizing: border-box; } 
+         input[type="submit"] { width: 100%; padding: 10px; margin-top: 10px; background-color: #007BFF; color: white; border: none; cursor: pointer; } 
+         input[type="submit"]:hover { background-color: #0056b3; }
+     </style>
+
+
+
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!---NAV-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.PNG" alt="LOGO" style="height: 80px;width: 100px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About Us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact Us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="houses.html">Homes</a></li>
+                            <li><a class="dropdown-item" href="plots.html">Plots</a></li>
+                            <li><a class="dropdown-item" href="flats.html">Apartments</a></li>
+                            <li><a class="dropdown-item" href="commercial.html">Commercial</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Extra
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="upcoming.html">Upcoming Projects</a></li>
+                            <li><a class="dropdown-item" href="trends.html">Trends</a></li>
+                            <li><a class="dropdown-item" href="power.html">Buying Power Calculator</a></li>
+                            <li><a class="dropdown-item" href="cost.html">Buy/Sale Calculator</a></li>
+                            <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+                            <li><a class="dropdown-item" href="security.html">Security</a></li>
+                            <li><a class="dropdown-item" href="facility.html">Extra Facilities</a></li>
+                            <li><a class="dropdown-item" href="ct.html">Clients Portal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dashbord.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Where Aspirations Meet Foundation.</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="conatiner t">
+        <h1>Rent or Buy Calculator</h1>
+         <p>Is it the right time to buy? Try our rent or buy calculator to determine if buying or renting a home makes more financial sense.</p>
+          <form> 
+            <label for="desired_location">Desired location:</label>
+             <input type="text" id="desired_location" name="desired_location" value="Bahria Town, Lahore">
+              <br><br>
+               <h2>Buying</h2>
+                <label for="desired_home_price">Desired home price:</label>
+                 <input type="number" id="desired_home_price" name="desired_home_price" value="9999"> 
+                 <label for="down_payment">Down payment:</label>
+                           <input type="number" id="down_payment" name="down_payment" value="10000">
+                 <br><br>
+                  <h2>Renting</h2>
+                   <label for="desired_monthly_rent">Desired monthly rent:</label> 
+                   <input type="number" id="desired_monthly_rent" name="desired_monthly_rent" value="250">
+                   <label for="monthly_renter_insurance">Monthly renter's insurance:</label>
+                   <input type="number" id="monthly_renter_insurance" name="monthly_renter_insurance" value="50">
+                    <br><br> 
+                    <h2>Advanced Options</h2>
+                     <label for="veteran_status">Veteran status:</label>
+                      <select id="veteran_status" name="veteran_status">
+                         <option value="false">No</option>
+                          <option value="true">Yes</option>
+                         </select> 
+                         <br><br>
+                          
+                        
+                
+                              
+                               <input type="submit" value="Calculate">
+         </form>
+
+
+
+
+    </div>
+    <!---FOOTER-->
+    <div class="container-fluid" style="color: aliceblue;background-color: gray;">
+
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h3>Company</h3>
+                    <ul class="nav flex-column" style="color: aliceblue;">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="About Us.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="Contact Us.html" class="nav-link p-0 text-body-secondary">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="FAQs.html" class="nav-link p-0 text-body-secondary">FAQs</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="EnquiryForm.html" class="nav-link p-0 text-body-secondary">Help and
+                                Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h3>Connect</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2" style="color: aliceblue;"><a href="Blogs.html"
+                                class="nav-link p-0 text-body-secondary" style="color: aliceblue;">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="Blogs.html" class="nav-link p-0 text-body-secondary">News</a></li>
+                        <li class="nav-item mb-2"><a href="trends.html" class="nav-link p-0 text-body-secondary">Forum</a></li>
+                        <li class="nav-item mb-2"><a href="agents.html" class="nav-link p-0 text-body-secondary">Real Estate
+                                Agents</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Add Property</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h3>Head Office</h3>
+                    <ul class="nav flex-column" style="color: aliceblue;">
+                        <li class="nav-item mb-2" style="color: aliceblue;"><a href="#"
+                                class="nav-link p-0 text-body-secondary">Houston, Texas.</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Zakriya Ahmed</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">03121259123</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Office Number</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">042-12312369</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h3>Subscribe to our newsletter</h3>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer class=" text-center text-white" style="background-color: gray;">
+                <div class="container p-4 pb-0" style="background-color: gray;">
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-twitter"></i></a>
+
+                        <!-- Google -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-google"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-linkedin-in"></i></a>
+
+                        <!-- Github -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-github"></i></a>
+                    </section>
+
+                    
+                    <div class="text-center p-3" style="background-color: gray;">
+                        © 2024 Copyright:
+                        <a class="text-white" href="index.html">dreamhomes.com</a>
+                    </div>
+                    
+                </div>
+            </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
